@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	/* custom name */
+	font-family: "OpenSauce-Bold";
+	/* actual name */
+	src: local("OpenSauceOne-Bold"),
+		url("./assets/fonts/OpenSauceOne-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OpenSauce-Light";
+	src: local("OpenSauceOne-Light"),
+		url("./assets/fonts/OpenSauceOne-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MontrealMedium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("PP Neue Montreal Medium"),
+		url("./assets/fonts/ppneuemontreal-medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MontrealBold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("PP Neue Montreal Bold"),
+		url("./assets/fonts/ppneuemontreal-bold.woff") format("woff");
+}
+/* Grotesque */
+@font-face {
+	font-family: "OverusedGrotesk-Bold";
+	font-style: OverusedGrotesk-Bold;
+	src: local("OverusedGrotesk-Bold"),
+		url("./assets/fonts/OverusedGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OverusedGrotesk-Light";
+	font-style: OverusedGrotesk-Light;
+	src: local("OverusedGrotesk-Light"),
+		url("./assets/fonts/OverusedGrotesk-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OverusedGrotesk-ExtraBold";
+	font-style: OverusedGrotesk-ExtraBold;
+	src: local("OverusedGrotesk-ExtraBold"),
+		url("./assets/fonts/OverusedGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "JetBrainsMono-Bold";
+	font-style: JetBrainsMono-Bold;
+	src: local("JetBrainsMono-Bold"),
+		url("./assets/fonts/JetBrainsMono-Bold.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "JetBrainsMono-Bold";
+	font-style: JetBrainsMono-Bold;
+	/* color: white; */
+	width: 100dvw;
+	overflow-x: hidden;
+	height: 100%;
+	background: #e1e1e1;
+	border-color: #3b3b3b;
+	user-select: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* locomotive scroll */
+
+html.lenis {
+	height: auto;
+}
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
+
+/* Only necessary with horizontal scrolling */
+html[data-scroll-orientation="horizontal"] {
+	body {
+		width: fit-content;
+	}
+	[data-scroll-container] {
+		display: flex;
+	}
+}
+
+.text-hover {
+	@apply hover:text-lightWhite transition-colors duration-300;
+}
+
+.black-underline {
+	@apply border-b-2 border-black border-opacity-70 mx-2 md:mx-6;
+}
+
+.white-underline {
+	@apply border-b-2 border-white border-opacity-70 mx-2 md:mx-6;
+}
+
+.my-heading-black {
+	@apply uppercase font-JetBrainsMono font-medium text-darkGray text-[3.5rem] md:text-[7rem];
+}
+
+.my-heading-white {
+	@apply uppercase font-JetBrainsMono font-medium text-lightWhite text-[4rem] md:text-[7rem];
+}
+
+.icons-hover:hover {
+	@apply transform scale-110 transition;
+}
