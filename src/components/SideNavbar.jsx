@@ -25,8 +25,8 @@ const SideNavbar = () => {
 
 	// Event handler for mouse enter
 	const handleMouseEnter = (ref) => {
-		gsap.o(ref.current, {
-			x: 25,
+		gsap.to(ref.current, {
+			x: -25,  // Move to the left (negative x-axis) since the menu is on the right
 			duration: 0.2,
 			ease: "power1.inOut",
 		});
@@ -44,37 +44,38 @@ const SideNavbar = () => {
 	return (
 		<>
 			<div
-				className={`bg-darkWhite w-[3.5rem] h-[3.5rem] fixed top-3 lg:top-4 left-4 z-50 rounded-full flex items-center justify-center transition-all ${
-					!visible ? "transform scale-0" : "transform scale-100"
-				}`}>
+				className={`bg-darkWhite md:w-8 md:h-8 lg:w-12 lg:h-12 sm:w-9 sm:h-9 fixed top-2 sm:top-3 lg:top-4 right-2 sm:right-4 z-50 rounded-full flex items-center justify-center transition-all ${!visible ? "transform scale-0" : "transform scale-100"
+					}`}>
 				{/* Hamburger menu button */}
-				<button
-					className="focus:outline-none w-full h-full flex items-center justify-center"
-					onClick={toggleMenu}>
-					{/* Hamburger menu icon div */}
-					<div className="w-6 h-6 relative top-1">
-						{/* Span elements for the hamburger and cross icons */}
-						<span
-							className={`block w-full h-0.5 bg-white transition-transform transform ${
-								isOpen ? "rotate-45 translate-y-1.5" : ""
-							}`}></span>
-						<span
-							className={`block w-full h-0.5 bg-white transition-opacity my-1 ${
-								isOpen ? "opacity-0" : ""
-							}`}></span>
-						<span
-							className={`block w-full h-0.5 bg-white transition-transform transform ${
-								isOpen ? "-rotate-45 -translate-y-1.5" : ""
-							}`}></span>
+				<label className="cursor-pointer">
+					<div className="w-8 h-8 sm:w-9 sm:h-9 flex flex-col items-center justify-center">
+						{/* Checkbox for controlling the state */}
+						<input
+							className="hidden peer"
+							type="checkbox"
+							checked={isOpen}
+							onChange={toggleMenu}  // Linking checkbox to toggleMenu function
+						/>
+						{/* Hamburger/Cross icon lines */}
+						<div
+							className="w-[1rem] sm:w-[1.2rem] md:w-[1.2rem] h-[2px] bg-white rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
+						></div>
+						<div
+							className="w-[1rem] sm:w-[1.2rem] md:w-[1.2rem] h-[2px] bg-white rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+						></div>
+						<div
+							className="w-[1rem] sm:w-[1.2rem] md:w-[1.2rem] h-[2px] bg-white rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+						></div>
 					</div>
-				</button>
+				</label>
+
 			</div>
+
 
 			{/* Side navigation menu */}
 			<div
-				className={`fixed top-0 left-0 h-full flex justify-center items-center w-64 md:w-96 text-2xl lg:text-4xl tracking-wide bg-lightBlack shadow-lg z-40 transition-transform duration-300 ease-in-out ${
-					isOpen ? "translate-x-0" : "-translate-x-full"
-				}`}>
+				className={`fixed top-0 right-0 h-full flex justify-center items-center w-64 md:w-96 text-2xl lg:text-4xl tracking-wide uppercase bg-lightBlack shadow-lg z-40 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+					}`}>
 				{/* Navigation menu */}
 				<ul>
 					{links.map((link, index) => (
@@ -92,7 +93,7 @@ const SideNavbar = () => {
 							</a>
 						</li>
 					))}
-					<div className="flex mt-12 gap-6">
+					<div className="flex mt-12 gap-6 text-white justify-center">
 						{socials.map((social) => (
 							<a
 								onClick={toggleMenu}

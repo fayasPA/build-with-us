@@ -17,6 +17,17 @@ import Bg2 from './src/assets/images/bg-2.jpg';
 import Bg3 from './src/assets/images/bg-3.jpg';
 import Bg4 from './src/assets/images/bg-4.jpeg';
 import Bg5 from './src/assets/images/bg-5.jpeg';
+// import Kiran from './src/assets/images/kiran.jpeg'
+// import Kiran from './src/assets/images/kiranCartoon.png'
+import Kiran from './src/assets/images/kiranCartoon2.jpg'
+// import Hafiz from './src/assets/images/hafiz.jpeg'
+// import Hafiz from './src/assets/images/hafizCartoon.png'
+import Hafiz from './src/assets/images/hafizcartoon1.jpeg'
+// import Hafiz from './src/assets/images/hafizcartoon2.png'
+// import Hafiz from './src/assets/images/hafizcartoon3.jpg'
+import Varun from './src/assets/images/fayas.jpg'
+import Fayas from './src/assets/images/fayasCartoon.png'
+
 import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube, FaLaptopCode, FaBriefcase } from "react-icons/fa";
 
 export const links = [
@@ -90,6 +101,31 @@ export const experiencesData = [
     }
 ];
 
+export const teamMembers = [
+    {
+        name: "Fayas P A",
+        picture: Fayas,  // Replace with correct image path
+        bio: "Fayas is a seasoned full-stack developer with a strong focus on React and modern web technologies. As the team lead, he oversees development and ensures seamless project delivery.",
+        linkedIn: "https://www.linkedin.com/in/fayas-p-a-328748142/",
+    },
+    {
+        name: "Varun MS",
+        bio: "Varun specializes in Large Language Models (LLMs), artificial intelligence, and chatbot development. His innovative approach drives our AI-powered solutions.",
+    },
+    {
+        name: "Kiran NJ",
+        picture: Kiran,  // Replace with correct image path
+        bio: "Kiran is a frontend React developer dedicated to delivering pixel-perfect UI designs. He collaborates with the backend team to build cohesive, high-performance web applications.",
+        linkedIn: "https://www.linkedin.com/in/kiran-n-9600012b6/",
+    },
+    {
+        name: "Hafiz Azeez",
+        picture: Hafiz,  // Replace with correct image path
+        bio: "Hafiz is a web designer with expertise in Figma and user experience design. He ensures that every project has a polished and professional look.",
+        linkedIn: "https://www.linkedin.com/in/imhaafz/",
+    }
+];
+
 export const projectsData = [
     {
         title: "LuxeMoto",
@@ -100,6 +136,7 @@ export const projectsData = [
         videoUrl: Luxemoto,
         imageUrl: LuxemotoImage,
         background: Bg1,
+        backgroundColor: "white",
         link: "https://luxemoto.in",
         githubLink: "https://github.com/fayasPA/luxe-moto"
     },
@@ -111,6 +148,7 @@ export const projectsData = [
         tags: ["React", "GSAP", "Tailwind", "GoLang"],
         videoUrl: Amanimotors,
         imageUrl: AmanimotorsImage,
+        backgroundColor: "black",
         background: Bg2,
         link: "https://amanimotors.in",
         githubLink: "https://github.com/fayasPA/amani-motors"

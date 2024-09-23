@@ -72,8 +72,8 @@ body {
 	font-family: "JetBrainsMono-Bold";
 	font-style: JetBrainsMono-Bold;
 	/* color: white; */
-	width: 100dvw;
-	overflow-x: hidden;
+	/* width: 100dvw; */
+	/* overflow-x: hidden; */
 	height: 100%;
 	background: #e1e1e1;
 	border-color: #3b3b3b;
@@ -126,13 +126,40 @@ html[data-scroll-orientation="horizontal"] {
 }
 
 .my-heading-black {
-	@apply uppercase font-JetBrainsMono font-medium text-darkGray text-[3.5rem] md:text-[7rem];
+	@apply uppercase font-JetBrainsMono font-medium text-darkGray text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[7rem];
 }
 
 .my-heading-white {
-	@apply uppercase font-JetBrainsMono font-medium text-lightWhite text-[4rem] md:text-[7rem];
+	@apply uppercase font-JetBrainsMono font-medium text-lightWhite text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[7rem];
 }
 
 .icons-hover:hover {
 	@apply transform scale-110 transition;
 }
+
+
+/* home page */
+.vertical-text {
+		writing-mode: vertical-lr;
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(49, 49, 49)
+  }
+  
+  body::-webkit-scrollbar-track-piece {
+    background: rgb(49, 49, 49);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: white;
+    box-shadow: inset -2px 2px 3px hsl(0deg 0% 100% / 25%),
+      inset -1px 2px 3px rgb(0 0 0 / 25%);
+  }
