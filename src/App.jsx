@@ -32,10 +32,8 @@ const App = () => {
 			<SideNavbar />
 			<Home />
 			<Projects />
-			{/* <AnimatedTabs/> ignore */}
-			{/* <Services/> ignore */}
 			<GridWithHover/>{/* for  services we provide */}
-			<CustomComponent/>
+			<CustomComponent/>{/* for custom components */}
 			<About />
 			<OurTeam />
 			<Experience />
