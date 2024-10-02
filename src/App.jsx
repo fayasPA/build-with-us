@@ -8,6 +8,10 @@ import Projects from "./components/Projects";
 import "./index.css";
 import About from "./components/About";
 import OurTeam from "./components/Team";
+import Services from "./components/Services";
+import AnimatedTabs from "./components/AnimatedTabs";
+import GridWithHover from "./components/GridWithHover";
+import CustomComponent from "./components/CustomComponent";
 
 const App = () => {
 	const scrollRef = useRef(null);
@@ -28,6 +32,10 @@ const App = () => {
 			<SideNavbar />
 			<Home />
 			<Projects />
+			{/* <AnimatedTabs/> ignore */}
+			{/* <Services/> ignore */}
+			<GridWithHover/>{/* for  services we provide */}
+			<CustomComponent/>
 			<About />
 			<OurTeam />
 			<Experience />

@@ -36,18 +36,20 @@ const Home = () => {
 						<div className="w-full flex items-center justify-start ">
 							<div className="text-center mb-[.2rem] sm:mb-0" style={{ fontSize: 'clamp(1rem, 6vw, 20rem)' }}>
 								<div id="text1" className="inline-block" data-scroll data-scroll-speed="0.1">
-									<span className="text-hover">E</span>
-									<span className="text-hover">N</span>
-									<span className="text-hover">D</span>
+									<span className="text-hover">B</span>
+									<span className="text-hover">R</span>
+									<span className="text-hover">O</span>
 								</div>
 								<div id="text2" className="inline-block" data-scroll data-scroll-speed="0.1">
 									<span className="text-hover">-</span>
 									<span className="text-hover">T</span>
 									<span className="text-hover">O</span>
 									<span className="text-hover">-</span>
-									<span className="text-hover">E</span>
-									<span className="text-hover">N</span>
+									<span className="text-hover">C</span>
+									<span className="text-hover">O</span>
 									<span className="text-hover">D</span>
+									<span className="text-hover">E</span>
+
 								</div>
 							</div>
 						</div>

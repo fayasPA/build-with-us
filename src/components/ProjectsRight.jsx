@@ -14,8 +14,8 @@ const ProjectsRight = ({ project }) => {
 
 		// Smoothly update mouse position
 		setMousePosition((prevPosition) => ({
-			x: prevPosition.x + (newX - prevPosition.x) * 0.08,
-			y: prevPosition.y + (newY - prevPosition.y) * 0.08,
+			x: prevPosition.x + (newX - prevPosition.x) * .08,
+			y: prevPosition.y + (newY - prevPosition.y) * .08,
 		}));
 	};
 
@@ -40,7 +40,7 @@ const ProjectsRight = ({ project }) => {
 	return (
 		<div
 			data-scroll
-			data-scroll-speed="0.4"
+			data-scroll-speed="0.5"
 			className="h-[16rem] md:h-[28rem] w-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
@@ -64,7 +64,7 @@ const ProjectsRight = ({ project }) => {
 						playsInline
 						src={project.videoUrl}
 						type="video/mp4"
-						style={{ transform: "scaleY(1.2)" }}
+						style={{ transform: "scaleY(1.4)" }}
 					/>
 				</a>
 

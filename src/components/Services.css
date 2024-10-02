@@ -1,0 +1,5 @@
+.service-card {
+    opacity: 0; /* Ensure that elements start invisible */
+    will-change: opacity, transform; /* Improves animation performance */
+  }
+  

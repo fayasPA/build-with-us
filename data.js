@@ -20,6 +20,8 @@ import Bg5 from './src/assets/images/bg-5.jpeg';
 // import Kiran from './src/assets/images/kiran.jpeg'
 // import Kiran from './src/assets/images/kiranCartoon.png'
 import Kiran from './src/assets/images/kiranCartoon2.jpg'
+import Hacker from './src/assets/images/Hacker.webp'
+
 // import Hafiz from './src/assets/images/hafiz.jpeg'
 // import Hafiz from './src/assets/images/hafizCartoon.png'
 import Hafiz from './src/assets/images/hafizcartoon1.jpeg'
@@ -110,6 +112,7 @@ export const teamMembers = [
     },
     {
         name: "Varun MS",
+        picture: Hacker,  // Replace with correct image path
         bio: "Varun specializes in Large Language Models (LLMs), artificial intelligence, and chatbot development. His innovative approach drives our AI-powered solutions.",
     },
     {
@@ -157,25 +160,25 @@ export const projectsData = [
         title: "Reactor",
         number: "03",
         description:
-            "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
-        tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
+            "The Reactor  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
+        tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Reactor,
         imageUrl: ReactorImage,
         background: Bg3,
-        link: "https://applesite-clone.netlify.app/",
-        githubLink: "https://github.com/stharavi01/apple_website"
+        link: "https://reactor-two-gamma.vercel.app/",
+        githubLink: "https://github.com/Kiran-nj/BestWeb.git"
     },
     {
         title: "Fizzi Website",
         number: "04",
         description:
-            "I created a stylish portfolio website using React, Tailwind CSS, and GSAP to showcase my projects. With easy navigation, polished design, and smooth animations, visitors can explore my work seamlessly. Every part of the site reflects my dedication to creativity and excellence in web development.",
-        tags: ["React", "Tailwind", "GSAP"],
+            "The Fizzy website is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS and Three.js for modern, visually appealing design",
+        tags: ["React", "Tailwind", "GSAP","Three.JS"],
         videoUrl: Fizzi,
         imageUrl: FizziImage,
         background: Bg4,
-        link: "https://stharavi.netlify.app/",
-        githubLink: "rabinShrestha_resume"
+     link: "https://fizzi-demo.vercel.app/",
+        githubLink: "https://github.com/Kiran-nj/Fizzzy"
     },
 
 ];
@@ -203,3 +206,31 @@ export const skillsData = [
     "LLM",
     "Chatbots",
 ];
+
+
+export const services = [
+    {
+      title: "Full Stack Web Development",
+      description: "We offer comprehensive end-to-end development solutions tailored to your unique business requirements. Our expert team collaborates closely with you to establish optimal design and functionality that aligns with your goals. We seamlessly integrate custom artificial intelligence solutions into your website, enhancing user experience and operational efficiency."
+    },
+    {
+      title: "Custom Generative AI Solutions",
+      description: "Our custom generative AI solutions are designed to elevate your business productivity. By leveraging advanced AI technologies, we create tailored applications that automate processes, enhance creativity, and streamline operations, enabling your team to focus on what matters most."
+    },
+    {
+      title: "Business Analytics",
+      description: "We provide bespoke business analytics services that empower you to make informed decisions. Our analytics solutions are tailored to your specific needs, delivering insights that drive growth and enhance strategic planning."
+    },
+    {
+      title: "Chatbot Development",
+      description: "Our custom chatbot development services create intelligent conversational agents that provide exceptional customer support. These bots are designed to understand and respond to user inquiries efficiently."
+    },
+    {
+      title: "Proof of Concept",
+      description: "We specialize in establishing proof of concept for your generative AI projects. Our team works with you to validate ideas and demonstrate feasibility, ensuring that your initiatives are grounded in practical application."
+    },
+    {
+      title: "AI Tools Training",
+      description: "We offer corporate training programs designed to empower your team to leverage AI tools effectively. Our training sessions focus on enhancing skills and knowledge, enabling your staff to integrate AI solutions into their workflows."
+    }
+  ];
