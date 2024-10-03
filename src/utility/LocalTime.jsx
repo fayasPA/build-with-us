@@ -28,7 +28,7 @@ const IndiaTime = () => {
 	}, []);
 
 	return (
-		<div className="flex flex-col text-base font-bold leading-snug ">
+		<div className="text-darkWhite flex flex-col text-base text-left font-bold leading-snug ">
 			<p className="mb-2">Time in India</p>
 			<p className="text-darkWhite text-hover">{formattedTime}</p>
 		</div>

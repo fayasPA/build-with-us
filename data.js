@@ -162,25 +162,25 @@ export const projectsData = [
         title: "Reactor",
         number: "03",
         description:
-            "The iPhone 15 Pro website clone is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
-        tags: ["React", "Tailwind", "GSAP", "ThreeJS"],
+            "The Reactor  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
+        tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Reactor,
         imageUrl: ReactorImage,
         background: Bg3,
-        link: "https://applesite-clone.netlify.app/",
-        githubLink: "https://github.com/stharavi01/apple_website"
+        link: "https://reactor-two-gamma.vercel.app/",
+        githubLink: "https://github.com/Kiran-nj/BestWeb.git"
     },
     {
         title: "Fizzi Website",
         number: "04",
         description:
-            "I created a stylish portfolio website using React, Tailwind CSS, and GSAP to showcase my projects. With easy navigation, polished design, and smooth animations, visitors can explore my work seamlessly. Every part of the site reflects my dedication to creativity and excellence in web development.",
-        tags: ["React", "Tailwind", "GSAP"],
+            "The Fizzy website is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS and Three.js for modern, visually appealing design",
+        tags: ["React", "Tailwind", "GSAP","Three.JS"],
         videoUrl: Fizzi,
         imageUrl: FizziImage,
         background: Bg4,
-        link: "https://stharavi.netlify.app/",
-        githubLink: "rabinShrestha_resume"
+     link: "https://fizzi-demo.vercel.app/",
+        githubLink: "https://github.com/Kiran-nj/Fizzzy"
     },
 
 ];
