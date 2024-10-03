@@ -41,7 +41,7 @@ const ProjectsRight = ({ project }) => {
 		<div
 			data-scroll
 			data-scroll-speed="0.4"
-			className="h-[16rem] md:h-[28rem] w-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
+			className="h-[16rem] md:h-[24rem] lg:h-[28rem] w-full mb-14 md:mb-0 md:px-10 flex flex-col justify-center items-center cursor-pointer relative"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 			onMouseMove={handleMouseMove}>
