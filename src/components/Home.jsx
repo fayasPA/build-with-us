@@ -75,7 +75,7 @@ const Home = () => {
 						<div className="max-w-full flex justify-start ">
 							<div
 								id="text4"
-								className="text-center  sm:my-[-.3rem] md:my-[-.4rem] lg:my-[-1rem]"
+								className="text-center sm:my-[-.3rem] md:my-[-.4rem] lg:my-[-1rem]"
 								style={{ fontSize: 'clamp(1rem, 8vw, 15rem)', lineHeight: '1.5' }}
 								data-scroll
 								data-scroll-speed="-0.1">

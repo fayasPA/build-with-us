@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import "./index.css";
 import About from "./components/About";
 import OurTeam from "./components/Team";
+import Services from "./components/Services";
 
 const App = () => {
 	const scrollRef = useRef(null);
@@ -28,6 +29,7 @@ const App = () => {
 			<SideNavbar />
 			<Home />
 			<Projects />
+			<Services />
 			<About />
 			<OurTeam />
 			<Experience />
