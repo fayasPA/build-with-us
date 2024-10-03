@@ -63,7 +63,9 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-gray-100 flex flex-col items-center justify-center p-10">
+    <div
+			id="services"
+      className="bg-gray-100 flex flex-col items-center justify-center p-10">
       {/* Header Section */}
       <h1 className="text-3xl font-bold text-gray-800 mb-10">
         Services We Offer

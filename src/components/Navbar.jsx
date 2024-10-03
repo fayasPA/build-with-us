@@ -17,7 +17,6 @@ const Navbar = () => {
 
 	return (
 			<header
-				id="about"
 				className="font-semibold md:text-sm leading-tight text-darkWhite bg-black w-full flex justify-between px-6 lg:px-14 py-5 sm:px-10 border-b border-white border-opacity-30 lg:border-none">
 				{/* Left column */}
 				<div>

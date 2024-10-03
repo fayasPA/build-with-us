@@ -7,6 +7,7 @@ const About = () => {
     return (
 
         <section
+			id="about"
             className="w-full h-full bg-lightBlack my-[5rem] md:py-[4rem] px-5"
             data-scroll-section>
             {/* heading */}
