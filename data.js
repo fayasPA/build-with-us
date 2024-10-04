@@ -159,15 +159,15 @@ export const projectsData = [
         githubLink: "https://github.com/fayasPA/amani-motors"
     },
     {
-        title: "Reactor",
+        title: "Alt Co",
         number: "03",
         description:
-            "The Reactor  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
+            "The AltCo  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
         tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Reactor,
         imageUrl: ReactorImage,
         background: Bg3,
-        link: "https://reactor-two-gamma.vercel.app/",
+        link: "https://team-nkg-reimagine-round1.vercel.app/",
         githubLink: "https://github.com/Kiran-nj/BestWeb.git"
     },
     {
