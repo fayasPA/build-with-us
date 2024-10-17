@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Serverbyt cPanel - Portfolio Subfolder
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ${{ secrets.CPANEL_DOMAIN }}
           username: ${{ secrets.CPANEL_USERNAME }}
