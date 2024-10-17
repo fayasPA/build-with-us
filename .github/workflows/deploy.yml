@@ -1,0 +1,37 @@
+name: Deploy to Serverbyt cPanel
+
+on:
+  push:
+    branches:
+      - main  # Triggers on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to Serverbyt cPanel
+        env:
+          CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
+          CPANEL_DOMAIN: ${{ secrets.CPANEL_DOMAIN }}
+          CPANEL_PATH: public_html/portfolio  # Adjust if deploying to a subdirectory
+        run: |
+          # Install curl if not present
+          apt-get install -y curl
+          # Use FTP to upload built files to Serverbyt
+          curl -T ./dist/* --user $CPANEL_USERNAME:$CPANEL_PASSWORD ftp://$CPANEL_DOMAIN/$CPANEL_PATH/
