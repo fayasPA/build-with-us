@@ -108,7 +108,7 @@ export const experiencesData = [
 
 export const teamMembers = [
     {
-        name: "Fayas P A",
+        name: "Fayas Muthaleef",
         picture: Fayas,  // Replace with correct image path
         bio: "Fayas is a seasoned full-stack developer with a strong focus on React and modern web technologies. As the team lead, he oversees development and ensures seamless project delivery.",
         linkedIn: "https://www.linkedin.com/in/fayas-p-a-328748142/",
