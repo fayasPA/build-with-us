@@ -24,7 +24,8 @@ const Navbar = () => {
 						id="my-name"
 						onClick={handleReload}
 						className="uppercase cursor-pointer text-darkWhite text-hover ">
-						<span>Build</span> <span className=""> with Us</span>
+						<span>cyfletech</span> 
+						{/* <span className=""> with Us</span> */}
 					</p>
 				</div>
 
