@@ -4,19 +4,13 @@ import { LuGraduationCap } from "react-icons/lu";
 // images
 import AmanimotorsImage from "./src/assets/images/amanimotors.png";
 import LuxemotoImage from "./src/assets/images/luxemoto.png";
-import ReactorImage from "./src/assets/images/appleImage.png";
-import FizziImage from "./src/assets/images/appleImage.png";
 // videos
 import Luxemoto from "./src/assets/videos/luxmoto.mp4";
 import Amanimotors from "./src/assets/videos/amanimotors.mp4";
+import PremierSteels from "./src/assets/videos/premiersteels.mp4";
 import Reactor from "./src/assets/videos/reactor.mp4";
 import Fizzi from "./src/assets/videos/fizzi.mp4";
 // background image
-import Bg1 from "./src/assets/images/bg-1.jpg";
-import Bg2 from './src/assets/images/bg-2.jpg';
-import Bg3 from './src/assets/images/bg-3.jpg';
-import Bg4 from './src/assets/images/bg-4.jpeg';
-import Bg5 from './src/assets/images/bg-5.jpeg';
 // import Kiran from './src/assets/images/kiran.jpeg'
 // import Kiran from './src/assets/images/kiranCartoon.png'
 import Kiran from './src/assets/images/kiranCartoon2.jpg'
@@ -133,52 +127,58 @@ export const teamMembers = [
 
 export const projectsData = [
     {
-        title: "LuxeMoto",
+        title: "Premier Steels",
         number: "01",
+        description:
+            "Premier Steels is a Steel distribution company website, It make use of react, gsap, etc at frontend.",
+        tags: ["React", "GSAP", "Tailwind"],
+        videoUrl: PremierSteels,
+        imageUrl: LuxemotoImage,
+        backgroundColor: "black",
+        link: "https://thepremiersteels.com",
+        githubLink: "https://github.com/fayasPA/premier_steels"
+    },
+    {
+        title: "LuxeMoto",
+        number: "02",
         description:
             "Luxemoto is a used car premium website used to showcase the stock of the cars available, It make use of react, gsap, etc at frontend and golang and postgres at the backend.",
         tags: ["React", "GSAP", "Tailwind", "GoLang"],
         videoUrl: Luxemoto,
         imageUrl: LuxemotoImage,
-        background: Bg1,
         backgroundColor: "white",
         link: "https://luxemoto.in",
         githubLink: "https://github.com/fayasPA/luxe-moto"
     },
     {
         title: "Amanimotors",
-        number: "02",
+        number: "03",
         description:
             "Amanimotors is a used car premium website used to showcase the stock of the cars available, It make use of react, gsap, etc at frontend and golang and postgres at the backend.",
         tags: ["React", "GSAP", "Tailwind", "GoLang"],
         videoUrl: Amanimotors,
         imageUrl: AmanimotorsImage,
         backgroundColor: "black",
-        background: Bg2,
         link: "https://amanimotors.in",
         githubLink: "https://github.com/fayasPA/amani-motors"
     },
     {
         title: "Alt Co",
-        number: "03",
+        number: "04",
         description:
             "The AltCo  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
         tags: ["React", "Tailwind", "GSAP"],
         videoUrl: Reactor,
-        imageUrl: ReactorImage,
-        background: Bg3,
         link: "https://team-nkg-reimagine-round1.vercel.app/",
         githubLink: "https://github.com/Kiran-nj/BestWeb.git"
     },
     {
         title: "Fizzi Website",
-        number: "04",
+        number: "05",
         description:
             "The Fizzy website is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS and Three.js for modern, visually appealing design",
         tags: ["React", "Tailwind", "GSAP","Three.JS"],
         videoUrl: Fizzi,
-        imageUrl: FizziImage,
-        background: Bg4,
      link: "https://fizzi-demo.vercel.app/",
         githubLink: "https://github.com/Kiran-nj/Fizzzy"
     },
