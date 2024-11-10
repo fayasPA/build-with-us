@@ -30,7 +30,7 @@ const Home = () => {
 	return (
 		<div className="h-screen flex flex-col">
 			<Navbar />
-			<section className="flex-1 bg-black text-darkWhite flex" data-scroll-section>
+			<section id="home" className="flex-1 bg-black text-darkWhite flex" data-scroll-section>
 				<div className="h-full w-[75%] pl-2 md:pl-0">
 					<div className="h-full flex flex-col justify-center lg:justify-start ">
 						<div className="w-full flex items-center justify-start ">
