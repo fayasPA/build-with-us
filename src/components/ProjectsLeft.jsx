@@ -19,14 +19,14 @@ const ProjectsLeft = ({ project }) => {
 			<div className="project-description bg-softGray  text-lg rounded-lg p-4 leading-normal tracking-wide fade">
 				<p>{project.description}</p>
 				<div className="flex gap-4 mt-4 cursor-pointer opacity-75">
-					<a
+					{/* <a
 						href={project.githubLink}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icons-hover"
 						aria-label="GitHub link">
 						<FaGithub size={25} />
-					</a>
+					</a> */}
 					<a
 						href={project.link}
 						target="_blank"
