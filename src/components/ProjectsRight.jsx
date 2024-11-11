@@ -56,16 +56,17 @@ const ProjectsRight = ({ project }) => {
 				}}
 				ref={videoRef}>
 				<a href={project.link} target="_blank">
-					<LazyVideo
-						className="pointer-events-none shadow-xl shadow-black rounded-2xl"
-						autoPlay
-						muted
-						loop
-						playsInline
-						src={project.videoUrl}
-						type="video/mp4"
-						style={{ transform: "scaleY(1.2)" }}
-					/>
+				<LazyVideo
+ 				 className="pointer-events-none shadow-xl shadow-black rounded-2xl"
+  				 autoPlay
+  				muted
+  				loop
+  				playsInline
+  				src={project.videoUrl} // YouTube URL
+  				type="video/mp4" // You can keep it as "video/mp4" for local fallback
+  				style={{ transform: "scaleY(1.2)" }}
+                />
+
 				</a>
 
 				{isHovered && (
