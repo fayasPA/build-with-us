@@ -5,11 +5,11 @@ import { LuGraduationCap } from "react-icons/lu";
 import AmanimotorsImage from "./src/assets/images/amanimotors.png";
 import LuxemotoImage from "./src/assets/images/luxemoto.png";
 // videos
-import Luxemoto from "./src/assets/videos/luxmoto.mp4";
-import Amanimotors from "./src/assets/videos/amanimotors.mp4";
-import PremierSteels from "./src/assets/videos/premiersteels.mp4";
-import Reactor from "./src/assets/videos/reactor.mp4";
-import Fizzi from "./src/assets/videos/fizzi.mp4";
+//import Luxemoto from "./src/assets/videos/luxmoto.mp4";
+//import Amanimotors from "./src/assets/videos/amanimotors.mp4";
+//import PremierSteels from "./src/assets/videos/premiersteels.mp4";
+//import Reactor from "./src/assets/videos/reactor.mp4";
+//import Fizzi from "./src/assets/videos/fizzi.mp4";
 // background image
 // import Kiran from './src/assets/images/kiran.jpeg'
 // import Kiran from './src/assets/images/kiranCartoon.png'
@@ -132,7 +132,7 @@ export const projectsData = [
         description:
             "Premier Steels is a Steel distribution company website, It make use of react, gsap, etc at frontend.",
         tags: ["React", "GSAP", "Tailwind"],
-        videoUrl: PremierSteels,
+        videoUrl: 'https://youtu.be/5OEk9v8Tzn4',
         imageUrl: LuxemotoImage,
         backgroundColor: "black",
         link: "https://thepremiersteels.com",
@@ -144,7 +144,7 @@ export const projectsData = [
         description:
             "Luxemoto is a used car premium website used to showcase the stock of the cars available, It make use of react, gsap, etc at frontend and golang and postgres at the backend.",
         tags: ["React", "GSAP", "Tailwind", "GoLang"],
-        videoUrl: Luxemoto,
+        videoUrl: 'https://youtu.be/jK2rgkw_sOw',
         imageUrl: LuxemotoImage,
         backgroundColor: "white",
         link: "https://luxemoto.in",
@@ -156,7 +156,7 @@ export const projectsData = [
         description:
             "Amanimotors is a used car premium website used to showcase the stock of the cars available, It make use of react, gsap, etc at frontend and golang and postgres at the backend.",
         tags: ["React", "GSAP", "Tailwind", "GoLang"],
-        videoUrl: Amanimotors,
+        videoUrl: 'https://youtu.be/Uu_pSi12Q7U',
         imageUrl: AmanimotorsImage,
         backgroundColor: "black",
         link: "https://amanimotors.in",
@@ -168,7 +168,7 @@ export const projectsData = [
         description:
             "The AltCo  website clone is a project built to learn   advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS for modern, visually appealing design.",
         tags: ["React", "Tailwind", "GSAP"],
-        videoUrl: Reactor,
+        videoUrl: 'https://youtu.be/lrXv7fnu0Yg',
         link: "https://team-nkg-reimagine-round1.vercel.app/",
         githubLink: "https://github.com/Kiran-nj/BestWeb.git"
     },
@@ -178,7 +178,7 @@ export const projectsData = [
         description:
             "The Fizzy website is a project built to learn advanced web technologies and design principles. It features smooth animations with GSAP, and uses React and Tailwind CSS and Three.js for modern, visually appealing design",
         tags: ["React", "Tailwind", "GSAP","Three.JS"],
-        videoUrl: Fizzi,
+        videoUrl: 'https://youtu.be/QFXBquu7ItI',
      link: "https://fizzi-demo.vercel.app/",
         githubLink: "https://github.com/Kiran-nj/Fizzzy"
     },

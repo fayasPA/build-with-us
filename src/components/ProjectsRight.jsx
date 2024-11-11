@@ -46,7 +46,7 @@ const ProjectsRight = ({ project }) => {
 			onMouseLeave={() => setIsHovered(false)}
 			onMouseMove={handleMouseMove}>
 			<div
-				className="h-fit w-full flex flex-col items-center justify-center "
+				className="h-full w-full flex flex-col items-center justify-center "
 				style={{
 					// backgroundColor: "black",
 					// backgroundImage: `url(${project.background})`,
@@ -55,9 +55,9 @@ const ProjectsRight = ({ project }) => {
 					// overflow: "hidden",
 				}}
 				ref={videoRef}>
-				<a href={project.link} target="_blank">
+				<a href={project.link} target="_blank" className="h-full w-full">
 					<LazyVideo
-						className="pointer-events-none shadow-xl shadow-black rounded-2xl"
+						className="pointer-events-none h-full w-full shadow-xl shadow-black rounded-2xl overflow-hidden"
 						autoPlay
 						muted
 						loop
