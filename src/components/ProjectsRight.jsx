@@ -46,7 +46,7 @@ const ProjectsRight = ({ project }) => {
 			onMouseLeave={() => setIsHovered(false)}
 			onMouseMove={handleMouseMove}>
 			<div
-				className="h-fit w-full flex flex-col items-center justify-center "
+				className="h-full w-full flex flex-col items-center justify-center "
 				style={{
 					// backgroundColor: "black",
 					// backgroundImage: `url(${project.background})`,
@@ -55,18 +55,17 @@ const ProjectsRight = ({ project }) => {
 					// overflow: "hidden",
 				}}
 				ref={videoRef}>
-				<a href={project.link} target="_blank">
-				<LazyVideo
- 				 className="pointer-events-none shadow-xl shadow-black rounded-2xl"
-  				 autoPlay
-  				muted
-  				loop
-  				playsInline
-  				src={project.videoUrl} // YouTube URL
-  				type="video/mp4" // You can keep it as "video/mp4" for local fallback
-  				style={{ transform: "scaleY(1.2)" }}
-                />
-
+				<a href={project.link} target="_blank" className="h-full w-full">
+					<LazyVideo
+						className="pointer-events-none h-full w-full shadow-xl shadow-black rounded-2xl overflow-hidden"
+						autoPlay
+						muted
+						loop
+						playsInline
+						src={project.videoUrl}
+						type="video/mp4"
+						style={{ transform: "scaleY(1.2)" }}
+					/>
 				</a>
 
 				{isHovered && (
